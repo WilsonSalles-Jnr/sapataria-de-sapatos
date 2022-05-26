@@ -7,6 +7,7 @@ import vendas from '../mock/venda.json'
 import QuantidadeVendida from './QuantiaVendida'
 import ValorPorMes from './ValorPorMes'
 import { useEffect, useState } from 'react'
+import Meta from './Meta'
 
 const insereGenero = (json) => {
   const lista = [];
@@ -51,6 +52,10 @@ const valorPorMes = () => {
   return listaMes
 }
 
+const totalVendido = () => {
+  return valorPorMes().reduce((acc, cur) => acc += cur.reais, 0)
+}
+
 export default function Card() {
   const [vendapm, setVendapm] = useState(vendaPorMes())
   const [valorpm, setValorpm] = useState(valorPorMes())
@@ -65,6 +70,7 @@ export default function Card() {
     <main style={{display: 'flex'}}>
       <QuantidadeVendida data={vendapm} />
       <ValorPorMes data={valorpm} />
+      <Meta meta={5000} total={totalVendido()}/>
     </main>
   )
 }
