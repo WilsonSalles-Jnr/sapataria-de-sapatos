@@ -1,0 +1,8 @@
+[
+  {"id": 1, "nome": "joao", "idade": 30, "genero": 1, "estado": "SP"},
+  {"id": 2, "nome": "jorge", "idade": 20, "genero": 1, "estado": "SP"},
+  {"id": 3, "nome": "jose", "idade": 60, "genero": 3, "estado": "BH"},
+  {"id": 4, "nome": "joana", "idade": 18, "genero": 2, "estado": "BH"},
+  {"id": 5, "nome": "janaina", "idade": 43, "genero": 2, "estado": "RJ"},
+  {"id": 6, "nome": "josue", "idade": 55, "genero": 1, "estado": "RJ"}
+]
