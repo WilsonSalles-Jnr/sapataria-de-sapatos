@@ -63,7 +63,6 @@ export default function Card() {
   }, [setValorpm, setVendapm])
   return(
     <main style={{display: 'flex'}}>
-      {console.log(valorPorMes())}
       <QuantidadeVendida data={vendapm} />
       <ValorPorMes data={valorpm} />
     </main>
