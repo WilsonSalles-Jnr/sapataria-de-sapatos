@@ -1,70 +1,24 @@
-# Getting Started with Create React App
+<h1 align="center">Sapataria de Sapatos</h1>
+<p align="center"><img src="https://cienciaeeducacao.files.wordpress.com/2020/05/giphy-1-1.gif?w=480" alt="dados" /></p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Executando aplicação:
 
-## Available Scripts
+Esta aplicação tem como dependência o recharts, utilize o comando `npm install` no terminal para instalar todas as dependências, após instalar as dependências, utilize o comando `npm start` para executar o projeto localmente.
 
-In the project directory, you can run:
+## Observações sobre o projeto
 
-### `npm start`
+Este projeto ainda não está conectado com o banco de dados, por isso, os dados foram __mockados__ para que fossem visualizados.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Dados em tempo real
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Nesta aplicação, os dados são atualizados a cada 5 segundos, este tempo esta definido no arquivo `Card.jsx` na rota `src/Components`, a função responsável está localizada no início da função `Card` em `useEffect`.
 
-### `npm test`
+## Dados aplicados
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [x] Quantia Vendida - Mostrar a quantidade de itens vendido durante 12 meses
+- [x] Valor Vendido - Mostrar o valor total arrecadado durante 12 meses
+- [ ] Meta - Mostrar a meta mensal
+- [ ] Clientes por gênero - Gráfico rosquinha que mostra o público alvo por gênero durante um determinado periodo
+- [ ] Cliente por faixa-etária - Gráfico rosquinha que mostra o público alvo por idade durante um determinado periodo
+- [ ] Quantia total por vendedor - Gráfico em pilar que mostra quantia total por vendedor durante um determinado periodo
+- [ ] Valor total por vendedor - Gráfico em pilar que mostra valor total por vendedor durante um determinado periodo
